@@ -1,5 +1,5 @@
 # sovits-tool
-This repo is a toolkit designed for training AI models using <a href="https://github.com/svc-develop-team/so-vits-svc/tree/4.0">Sovits-v4</a>. If you are training with pure human voice audio, this is all you need to train your Sovits model. If you need to extract audio from songs or music videos and remove vocals, you will also need the UVR(https://github.com/Anjok07/ultimatevocalremovergui) tool.
+This repo is a toolkit designed for training AI models using <a href="https://github.com/svc-develop-team/so-vits-svc/tree/4.0">Sovits-v4</a>. If you are training with pure human voice audio, this is all you need to train your Sovits model. If you need to extract audio from songs or music videos and remove accompaniment, you will also need the UVR(https://github.com/Anjok07/ultimatevocalremovergui) tool.
 
 ## audioseg
 The script audioseg.py segments all .wav files in the input folder based on pauses and creates several segments that contain only human speech. The duration of each .wav file is controlled to be between 10 to 15 seconds, meeting the training data requirements of <a href="https://github.com/svc-develop-team/so-vits-svc/tree/4.0">Sovits-v4</a>. Also, it dumps a .json that contains the periods of time in which the slice occours, in the following format: 
